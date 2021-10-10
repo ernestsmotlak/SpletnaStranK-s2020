@@ -196,20 +196,48 @@ li.kontakt_li {
 #bodyEventa {
     width: 75%;
     height: 75%;
-    background-color: aquamarine;
+    background-color: darkkhaki;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 0.5fr;  /*v originalu je 1fr 1fr */
+    gap: 0px 0px;
+    grid-template-areas:
+    "."
+    ".";
+}
+
+#slikaEventa {
     margin-left: auto;
     margin-right: auto;
 }
 
-#znotrajBodyEventa {
-    background-color: grey;
-    width: 50%;
-    height: 50%;
-    margin-left: 3%;
+#textEventa {
+    margin-left: 10%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50%;
+    gap: 0px 0px;
+    grid-template-areas:
+    ". .";
+
 }
-#textBodyEventa {
-    background-color: blueviolet;
+
+#levo {
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "."
+    ".";
 }
+
+
 
 
 /******************************** event DO tle *************************************************/
